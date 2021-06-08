@@ -621,6 +621,7 @@ def searchNZB(album, new=False, losslessOnly=False, albumlength=None,
         for newznab_host in newznab_hosts:
 
             provider = newznab_host[0]
+            categories_b = categories
 
             # Add a little mod for kere.ws
             if newznab_host[0] == "http://kere.ws":
